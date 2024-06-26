@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/7864e63ff8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "yIx_K4HKP6DkEuzrO",
+        });
+    })();
+    </script>
+    <title>Document</title>
+</head>
+<body class="bg-black font-custom1 text-white scroll-smooth">
+    <section class="h-screen">
+        <nav class="p-5 shadow  md:flex md:items-center md:justify-between relative z-20 transition-all ease-in-out duration-500" id="js-mobile-nav">
+            <div class="flex justify-between items-center" id="js-mobile-nav">
+                <span class="text-2xl font-sans text-secondary">
+                    Prime-X
+                </span>
+
+                <span class="text-white text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu-outline" onclick="menu(this);"></ion-icon>
+                </span>
+            </div>
+            
+
+            <div>
+                <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 md:bg-transparent opacity-0 top-[-400px]">
+                    <li class="mx-4 my-6 md:my-0"><a href="#about-me" class="font-sans text-xl text-secondary hover:text-cyan-600 duration-500">about Me</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#services" class="font-sans text-xl text-secondary hover:text-cyan-600 duration-500">Services</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#contact-me" class="font-sans text-xl text-secondary hover:text-cyan-600 duration-500">Contact Me</a></li>
+
+                    <button class="hidden bg-cyan-400 text-white font-sans duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">
+                        Get Started
+                    </button>
+                </ul>
+            </div>
+             
+        </nav>
+        <div class="md:flex items-center justify-center space-x-52 md:mt-20">
+            <div class="md:block">
+                <div class="flex items-center justify-center mt-5 mb-5 md:block md:my-0">
+                    <div class="flex items-center justify-center rounded-full  bg-white md:hidden">
+                        <img src="/img/image 2.png" alt="" width="220" class="rounded-full">
+                    </div>
+                    <div class="block absolute left-[27rem] sm:ml-36  md:hidden">
+                        <div class="relative right-8">
+                           <p class="mb-14 w-20 rotate-90">follow me</p> 
+                        </div>
+                        <div class="flex flex-col space-y-4">
+                           <a href="https:/www.linkedin.com/in/chouji-akimichi-31b909286/" target="_blank" class="block hover:opacity-70"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://web.facebook.com/attah.josiah.7" target="_blank" class="block hover:opacity-70"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https:/www.instagram.com/josiahprime7?igsh=bHZha29vdno4NThl" target="_blank" class="block hover:opacity-70"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/Josiah_prime?s=09" target="_blank" class="block hover:opacity-70"><i class="fa-brands fa-twitter"></i></a> 
+                        </div>
+                        
+                    </div>     
+                </div>
+                <div class="ml-10 md:block md:ml-0">
+                    <p class="text-3xl md:text-5xl text-left font-sans mb-3 md:mb-5 md:text-left js-prime">hi, i am <span class="text-secondary" style="text-shadow: 0px 0px 10px cyan;">josiah Prime</span></p>
+                    <p class="js-typingEffect1 text-2xl text-left mb-3 md:mb-9 text-gray-400 md:hidden"></p>
+                    <p class="js-typingEffect hidden md:block md:text-4xl text-gray-400 md:mb-9 md:text-left"></p>
+                    <p class="font-sans text-xl mb-5">&quot;building seamless and responsive websites <br> that elevate user experience&quot;</p>
+                </div>
+                
+                <div class="flex space-x-3 ml-10 md:ml-0">
+                    <button class="bg-secondary text-primary font-bold font-sans px-4 py-2 rounded-lg border-solid border-2 border-secondary hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan,0_0_100px_1px_cyan,0_0_200px_1px_cyan] duration-300">download cv</button>
+                    <button class="bg-secondary text-primary font-bold font-sans px-4 py-2 rounded-lg border-solid border-2 border-secondary hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan,0_0_100px_1px_cyan,0_0_200px_1px_cyan] duration-300">learn more</button>
+                </div>
+            </div> 
+            <div class="hidden md:flex items-center justify-center rounded-full  bg-secondary w-96">
+                <img src="/img/image 2.png" alt="" width="400" class="rounded-full">
+            </div>
+        </div> 
+    </section>
+
+    <section class="h-screen">
+        <a href="/" class="text-4xl font-sans font-bold flex justify-center my-7 text-secondary" id="about-me"><h2>About Me</h2></a>
+
+        <!-- about me card for mobile display -->
+         <div class="flex items-center justify-center">
+            <div class="md:hidden bg-primary" style="width: 26rem; height: 30rem; border-radius: 20px;">
+                <div class="flex flex-col items-center justify-center" style="width: 26rem; height: 15rem; background-color: cyan; border-radius: 20px 20px 0px 20px;">
+                    <div class="bg-primary flex items-center justify-center" style="width: 12rem; height: 12rem; border-radius: 50%;">
+                        <div class="flex items-center justify-center" style="width: 11rem; height: 11rem; background-color: rgb(255, 255, 255); border-radius: 50%;">
+                            <img src="/img/1719076431573.png" alt="" width="150"> 
+                        </div> 
+                    </div>
+                    <div class="flex flex-row mt-2">
+                        <div class="">
+                           <p class="text-2xl mr-4">contact me</p> 
+                        </div>
+                        <div class="flex space-x-6">
+                            <a href="https:/www.linkedin.com/in/chouji-akimichi-31b909286/" target="_blank" class="block hover:opacity-70 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://web.facebook.com/attah.josiah.7" target="_blank" class="block hover:opacity-70 text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https:/www.instagram.com/josiahprime7?igsh=bHZha29vdno4NThl" target="_blank" class="block hover:opacity-70 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/Josiah_prime?s=09" target="_blank" class="block hover:opacity-70 text-2xl"><i class="fa-brands fa-twitter"></i></a> 
+                        </div>      
+                    </div>
+                </div>
+                <div class="mx-4 my-4 flex">
+                    <div>
+                        <p class="font-sans text-2xl">
+                            Meet <span class="text-secondary" style="text-shadow: 0px 0px 10px cyan;">Josiah Prime</span>,<br>your creative trio:         
+                        </p> 
+                        <div class=" text-left md:text-lg md:w-4/12">
+                            <p><span class="text-secondary">Web Developer</span>: Turning ideas into functional websites.</p>
+                            <p><span class="text-secondary">Website Designer</span>: Crafting captivating interfaces.</p>
+                            <p> <span class="text-secondary">Blender Artist</span>: Breathing life into 3D worlds.
+                                Let's create digital magic together!</p>
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+        
+
+        <div class="hidden md:flex items-center justify-around">
+            <div class=" text-left md:text-lg md:w-4/12">
+                <p class="font-sans text-2xl">
+                    Meet <span class="text-secondary" style="text-shadow: 0px 0px 10px cyan;">Josiah Prime</span>,<br>your creative trio:         
+                </p> 
+                <p><span class="text-secondary">Web Developer</span>: Turning ideas into functional websites.</p>
+                <p><span class="text-secondary">Website Designer</span>: Crafting captivating interfaces.</p>
+                <p> <span class="text-secondary">Blender Artist</span>: Breathing life into 3D worlds.
+                    Let's create digital magic together!</p>
+            </div>
+
+            <div>
+               <img class="relative hidden z-10 md:block" src="/img/1719076431564.png" alt="" width="300">
+               <img class="absolute hidden md:block -bottom-[36rem] right-5 z-0" src="/img/1719076283258.png" alt="" width="500"> 
+            </div>
+            
+        </div>
+        <div class="">
+            <!-- former sizes of text :w-8/12 md:w-7/12 md:text-base -->
+            
+             
+         </div>
+         <div class="hidden md:flex items-center justify-center md:space-x-44 my-20">
+            <div class="md:flex md:space-x-44">
+                <div class="flex flex-col items-center mb-5 mr-5 md:mb-0">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
+                        <div class="bg-secondary w-3 h-3 rounded-full"></div>
+                    </div>
+                    <p>Facebook</p>
+                    <a class="text-secondary hover:text-cyan-600" href="https://web.facebook.com/attah.josiah.7" target="_blank">josiah attah</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
+                        <div class="bg-secondary w-3 h-3 rounded-full"></div>
+                    </div>
+                    <p>Email Address</p>
+                    <a class="text-secondary hover:text-cyan-600" href="choujiakimichi02@gmail.com" target="_blank">choujiakimichi02@gmail.com</a>
+                </div>
+            </div>
+            <div class="md:flex md:space-x-44">
+               <div class="flex flex-col items-center mb-5 ml-5 md:mb-0">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
+                        <div class="bg-secondary w-3 h-3 rounded-full"></div>
+                    </div>
+                    <p>Twitter</p>
+                    <a class="text-secondary hover:text-cyan-600" href="https://x.com/Josiah_prime?s=09" target="_blank">josiah prime</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
+                        <div class="bg-secondary w-3 h-3 rounded-full"></div>
+                    </div>
+                    <p>linked-in</p>
+                    <a class="text-secondary hover:text-cyan-600" href="https:/www.linkedin.com/in/chouji-akimichi-31b909286/" target="_blank">josiah prime</a>
+                </div> 
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="h-screen">
+        <h2 class="text-4xl font-sans font-bold flex justify-center my-7 text-secondary" id="services">Services</h2>
+        <div class="flex flex-col items-center md:flex md:flex-row justify-center">
+
+            <div class="md:hidden">
+                <div class="w-44 h-36 bg-primary px-8 py-5 mb-10">
+                    <div class="flex justify-start">
+                        <img src="/img/Vector (1).png" alt="">  
+                    </div>
+                    
+                    <p class="text-lg text-secondary">web development</p>
+                </div>
+                
+                <div class="w-44 h-36 bg-primary px-8 py-5 mb-10">
+                    <div>
+                        <img src="/img/Vector (2).png" alt="">
+                    </div>
+                    <p class="text-lg text-secondary" style="margin-top: 7px;">blender artist</p>
+                </div>
+                
+                <div class="w-44 h-36 bg-primary px-8 py-5 mb-10">
+                    <div>
+                        <img src="/img/Vector (2).png" alt="">
+                    </div>
+                    <p class="text-lg text-secondary mt-5">web design</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center justify-center space-x-28" style="margin-top: 5rem;">
+                <div class="js-hover w-72 h-80 bg-primary flex flex-col items-center justify-center rounded-lg hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan] duration-500">
+                    <div class="js-showHover relative z-30 w-[4.5rem] h-[4.5rem] flex items-center justify-center rounded-full duration-500">
+                       <div class="absolute z-30 w-16 h-16 flex items-center justify-center rounded-full bg-primary">
+                            <img src="/img/Vector.png" alt="" width="50">
+                        </div> 
+                    </div>
+                    
+                    <p class="text-lg font-sans font-bold text-white my-4">web development</p>
+    
+                    <p class=" text-gray-600 font-sans font-bold text-center">
+                        "Focused on website development, With expertise in coding and optimizing user experiences, I create websites that are both functional and visually appealing.</p>
+    
+                    <div class="js-readMoreButton relative w-28 h-10 my-4 flex items-center justify-center rounded-md bg-secondary text-black duration-500">
+                       <button class="font-bold">Read More</button> 
+                    </div>
+                    
+                </div>
+
+                <div class="js-hover1 w-72 h-80 bg-primary flex flex-col items-center justify-center rounded-lg hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan] duration-500">
+                    <div class="js-showHover1 relative z-30 w-[4.5rem] h-[4.5rem] flex items-center justify-center rounded-full duration-500">
+                       <div class="absolute z-30 w-16 h-16 flex items-center justify-center rounded-full bg-primary">
+                            <img src="/img/Vector.png" alt="" width="50">
+                        </div> 
+                    </div>
+                            
+                    <p class="text-lg font-sans font-bold text-white my-4">Blender Animator</p>
+    
+                    <p class=" text-gray-600 font-sans font-bold text-center">"I specialize in 3D artistry with Blender, bringing imagination to life through stunning visual creations. From character modeling to intricate animations."</p>
+    
+                    <div class="js-readMoreButton1 relative w-28 h-10 my-4 flex items-center justify-center rounded-md bg-secondary text-black duration-500">
+                       <button class="font-bold">Read More</button> 
+                    </div>
+                </div>
+    
+                <div class="js-hover2 w-72 h-80 bg-primary flex flex-col items-center justify-center rounded-lg hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan] duration-500">
+                    <div class="js-showHover2 relative z-30 w-[4.5rem] h-[4.5rem] flex items-center justify-center rounded-full duration-500">
+                       <div class="absolute z-30 w-16 h-16 flex items-center justify-center rounded-full bg-primary">
+                            <img src="/img/Vector.png" alt="" width="50">
+                        </div> 
+                    </div>
+                    
+                    <p class="text-lg font-sans font-bold text-white my-4">Web Design</p>
+    
+                    <p class=" text-gray-600 font-sans font-bold text-center">I create engaging and user-friendly digital experiences. From concept to execution, I design visually appealing websites that work seamlessly across devices."</p>
+    
+                    <div class="js-readMoreButton2 relative w-28 h-10 my-4 flex items-center justify-center rounded-md bg-secondary text-black duration-500">
+                       <button class="font-bold">Read More</button> 
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+        
+        
+
+        <div class="hidden md:hidden">
+            <h2 class="text-4xl font-bold flex justify-center mt-16 mb-10">My Skills</h2>
+            <div class="bg-primary flex items-center justify-around w-[75rem] h-32 mx-auto">
+                <div class="flex flex-col">
+                    <p class="text-5xl">50%</p>
+                    <p class="text-green-600">HTML</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <p class="text-5xl">50%</p>
+                    <p class="text-green-600">HTML</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <p class="text-5xl">50%</p>
+                    <p class="text-green-600">HTML</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <p class="text-5xl">50%</p>
+                    <p class="text-green-600">HTML</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill bar section -->
+    <section class="h-screen">
+        <h2 class="hidden  md:flex text-4xl text-secondary font-bold font-sans items-center justify-center mt-16 mb-10">My Skills</h2>
+        <h2 class="font-bold font-sans flex items-center justify-center mb-10 text-4xl text-secondary md:hidden">Technical Skills</h2>
+        <div class="flex items-center justify-around">
+            <div class="hidden md:block">
+                <h3 class="text-xl font-bold font-sans mb-5 ml-10">Technical Skills</h3>
+                <div class=" bg-black ml-10">
+                    <p class="text-lg font-sans font-bold">HTML<span class="text-secondary ml-3"> 90%</span></p>
+                    <div class="w-[25rem] rounded-full bg-gray-700">
+                        <div class="bg-secondary h-full rounded-full w-[90%] text-black font-sans font-medium p-0.5 text-xs text-center">90%</div>
+                    </div>
+                </div>
+                
+                <div class=" bg-black ml-10 my-10">
+                    <p class="text-lg font-sans font-bold">CSS<span class="text-secondary ml-3"> 80%</span></p>
+                    <div class="w-[25rem] rounded-full bg-gray-700">
+                        <div class="bg-secondary h-full rounded-full w-[80%] text-black font-sans font-medium p-0.5 text-xs text-center">80%</div>
+                    </div>
+                </div>
+
+                <div class=" bg-black ml-10">
+                    <p class="text-lg font-sans font-bold">JAVASCRIPT<span class="text-secondary ml-3"> 60%</span></p>
+                    <div class="w-[25rem] rounded-full bg-gray-700">
+                        <div class="bg-secondary h-full rounded-full w-[60%] text-black font-sans font-medium p-0.5 text-xs text-center">60%</div>
+                    </div>
+                </div>
+
+                <div class=" bg-black ml-10 my-10">
+                    <p class="text-lg font-sans font-bold">PHP<span class="text-secondary ml-3"> 35%</span></p>
+                    <div class="w-[25rem] rounded-full bg-gray-700">
+                        <div class="bg-secondary h-full rounded-full w-[35%] text-black font-sans font-medium p-0.5 text-xs text-center">35%</div>
+                    </div>
+                </div>
+            </div>
+           
+             
+
+            <div class="flex flex-col">
+                <h2 class="hidden  md:flex text-xl font-bold font-sans items-center justify-center mb-10">Work Skills</h2>
+                <div class="flex mb-10">
+                    <div class="flex items-center justify-center flex-col mr-5">
+                        
+                        <div class="js-circularProgress relative rounded-full" style="background: conic-gradient(cyan 3.6deg, #ededed 0deg); width: 170px; height: 170px; display: flex; align-items: center; justify-content: center;">
+                            <div class="absolute bg-secondary rounded-full" style="width: 150px; height: 150px; background-color: #fff;"></div>
+                            <div class="flex items-center justify-center flex-col">
+                                <span class="relative" style="font-size: 18px; font-weight: 600; color: #212121; text-transform: capitalize;">team leader</span>
+                                <span class="js-circularValue relative text-2xl font-sans" style="font-weight: 700; color: cyan;">0%</span>  
+                            </div>
+                            
+                        </div> 
+                    </div>
+
+                    <div class="flex items-center justify-center flex-col">
+                        <div class="js-circularProgress1 relative rounded-full" style="background: conic-gradient(cyan 3.6deg, #ededed 0deg); width: 170px; height: 170px; display: flex; align-items: center; justify-content: center;">
+                            <div class="absolute bg-secondary rounded-full" style="width: 150px; height: 150px; background-color: #fff;"></div>
+                            <div class="flex flex-col items-center justify-center">
+                                <span class="relative" style="font-size: 18px; font-weight: 600; color: #212121; text-transform: capitalize;" style="font-size: 30px; font-weight: 500; color: cyan;">experience</span>
+                                <span class="js-circularValue1 relative text-3xl font-sans" style="font-weight: 700; color: cyan;">0%</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex items-center justify-center flex-col mr-5">
+                        <div class="js-circularProgress2 relative rounded-full" style="background: conic-gradient(cyan 3.6deg, #ededed 0deg); width: 170px; height: 170px; display: flex; align-items: center; justify-content: center;">
+                            <div class="absolute bg-secondary rounded-full" style="width: 150px; height: 150px; background-color: #fff;"></div>
+                            <div class="flex flex-col items-center justify-center">
+                                <span class="relative" style="font-size: 18px; font-weight: 600; color: #212121; text-transform: capitalize;" style="font-size: 30px; font-weight: 500; color: cyan;">hard work</span>
+                                <span class="js-circularValue2 relative text-3xl font-sans" style="font-weight: 700; color: cyan;">0%</span>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="flex items-center justify-center flex-col">
+                        <div class="js-circularProgress3 relative rounded-full" style="background: conic-gradient(cyan 3.6deg, #ededed 0deg); width: 170px; height: 170px; display: flex; align-items: center; justify-content: center;">
+                            <div class="absolute bg-secondary rounded-full" style="width: 150px; height: 150px; background-color: #fff;"></div>
+                            <div class="flex flex-col items-center justify-center">
+                                <span class="relative" style="font-size: 18px; font-weight: 600; color: #212121; text-transform: capitalize;" style="font-size: 30px; font-weight: 500; color: cyan;">team work</span>
+                                <span class="js-circularValue3 relative text-3xl font-sans" style="font-weight: 700; color: cyan;">0%</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>                    
+            </div>
+            
+            
+            
+            
+        </div>
+        
+    </section>
+    <!-- mobile display it is hidden from the main screen-->
+    <section class="h-screen md:hidden">
+        <h2 class="text-4xl font-bold text-secondary flex justify-center mt-16 mb-10">Work Skills</h2>
+        <div class="">
+           <div class="flex items-center justify-around">
+            <div class="flex flex-col-reverse items-center justify-center w-40 h-40 bg-primary mb-5">
+                <p class="text-5xl">50%</p>
+                <p class="text-2xl text-green-600">HTML</p>
+            </div>
+
+            <div class="flex flex-col-reverse items-center justify-center w-40 h-40 bg-primary mb-5">
+                <p class="text-5xl">35%</p>
+                <p class="text-2xl text-green-600">HTML</p>
+            </div>
+            </div>
+            <div class=" flex items-center justify-around">
+                <div class="flex flex-col-reverse items-center justify-center w-40 h-40 bg-primary mb-5">
+                    <p class="text-5xl">10%</p>
+                    <p class="text-2xl text-green-600">JAVASCRIPT</p>
+                </div>
+
+                <div class="flex flex-col-reverse items-center justify-center w-40 h-40 bg-primary mb-5">
+                    <p class="text-5xl">5%</p>
+                    <p class="text-2xl text-green-600">PHP</p>
+                </div>
+            </div> 
+        
+        
+    </section>
+    
+    <section class="h-screen">
+        <h2 class="text-4xl font-bold flex justify-center mt-16 mb-10 text-secondary font-sans" id="contact-me">Get In Touch</h2>
+        <form action="" onsubmit="sendMail();">
+            <div class="flex items-center justify-around">
+                <div class="flex flex-col">
+                    <input type="text" placeholder="First Name" class="font-sans font-bold text-secondary bg-transparent border-solid border-b-2 border-primary pb-5 outline-none mb-5 md:w-96" id="name" required>
+
+                    <input type="email" placeholder="Email" class="font-sans font-bold text-secondary bg-transparent border-solid border-b-2 border-primary pb-5 outline-none" id="email" required>
+                </div>
+                
+                <div class="flex flex-col">
+                    <input type="text" placeholder="Last Name" class="font-sans font-bold text-secondary bg-transparent border-solid border-b-2 border-primary pb-5 outline-none mb-5 md:w-96" required>
+
+                    <input type="tel" placeholder="Phone Number" class="font-sans font-bold text-secondary bg-transparent border-solid border-b-2 border-primary pb-5 outline-none" required> 
+                </div>
+            </div> 
+            <div class="flex items-center justify-center">
+                <textarea name="message" id="message" rows="4" placeholder="Hi How Can We Help You?" class="font-sans font-bold text-secondary bg-transparent border-solid border-2 border-primary p-5 outline-none w-[25rem] h-14 mt-10 md:w-[67rem] md:h-32">
+                </textarea>
+                
+            </div> 
+            <div class="flex items-center justify-center">
+                <button class="w-36 h-10 my-8 flex items-center justify-center rounded-md duration-500 text-black font-bold bg-secondary shadow-[0_0_5px_1px_cyan,0_0_15px_1px_cyan] hover:shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan,0_0_100px_1px_cyan,0_0_200px_1px_cyan]">Submit</button> 
+            </div>
+        </form>     
+    </section>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    //for box 1
+    const check = document.querySelector('.js-hover');
+    const showHover = document.querySelector('.js-showHover');
+    const readMoreButton = document.querySelector('.js-readMoreButton');
+    addHoverEffects(check, showHover, readMoreButton);
+
+    //for box 2
+    const check1 = document.querySelector('.js-hover1');
+    const showHover1 = document.querySelector('.js-showHover1');
+    const readMoreButton1 = document.querySelector('.js-readMoreButton1');
+    addHoverEffects(check1, showHover1, readMoreButton1);
+
+    //for box 3
+    const check2 = document.querySelector('.js-hover2');
+    const showHover2 = document.querySelector('.js-showHover2');
+    const readMoreButton2 = document.querySelector('.js-readMoreButton2');
+    addHoverEffects(check2, showHover2, readMoreButton2);
+
+    function menu(e) {
+        let list = document.querySelector('ul');
+        let mobileNav = document.getElementById('js-mobile-nav')
+        e.name === 'menu' ? (e.name = 'close', list.classList.add('top-[70px]'), list.classList.add('opacity-100'), list.classList.add('z-10'), list.classList.add('bg-primary'), mobileNav.style.backgroundColor = 'rgb(33,33,33)')  : (e.name = 'menu', list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'), list.classList.remove('bg-primary'), mobileNav.style.removeProperty('background-color'))
+    }
+
+    function change() {
+        const jeph = document.querySelector('.js-prime')
+        if (jeph.innerHTML === 'hi, i am josiah') {
+            jeph.innerHTML = 'hi, i am jeph'
+        }else{
+            jeph.innerHTML = 'hi, i am josiah'
+        }
+    }
+    
+
+    //writing a long repetitive piece of shit cause i don't know a way around it currently
+    //maybe after learning react ill come back for it
+    
+
+    //circular progress bar 1
+    let circularProgress = document.querySelector('.js-circularProgress'),
+    progressValue = document.querySelector('.js-circularValue')    
+    progressCounter(50, progressValue, circularProgress);
+
+    //circular progress bar 2
+    let circularProgress1 = document.querySelector('.js-circularProgress1'),
+    progressValue1 = document.querySelector('.js-circularValue1')    
+    progressCounter(70, progressValue1, circularProgress1);
+
+    //circular progress bar 3
+    let circularProgress2 = document.querySelector('.js-circularProgress2'),
+    progressValue2 = document.querySelector('.js-circularValue2')    
+    progressCounter(99, progressValue2, circularProgress2);
+
+    //circular progress bar 4
+    let circularProgress3 = document.querySelector('.js-circularProgress3'),
+    progressValue3 = document.querySelector('.js-circularValue3')    
+    progressCounter(80, progressValue3, circularProgress3);
+
+
+    function progressCounter(fixedNumber, progressValueElement, circularProgressElement) {
+
+        let progressStartValue = 0,
+        progressEndValue = fixedNumber,
+        speed = 100;
+
+        let progress = setInterval(() => {
+        if (progressStartValue === progressEndValue) {
+            clearInterval(progress);
+        }
+        //console.log(progressStartValue)
+        progressValueElement.textContent = `${progressStartValue}%`
+        circularProgressElement.style.background = `conic-gradient(cyan ${progressStartValue * 3.6}deg, #ededed 0deg)`
+        progressStartValue ++
+        //console.log(progressStartValue)
+     }, speed);
+    }
+     
+
+
+     function addHoverEffects(checkElement, showHoverElement, readMoreButtonElement) {
+    checkElement.addEventListener('mouseover', () => {
+        showHoverElement.classList.add('shadow-[0_0_5px_1px_cyan,0_0_15px_1px_cyan]');
+        readMoreButtonElement.classList.add('shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan,0_0_100px_1px_cyan,0_0_200px_1px_cyan]');
+    });
+
+    checkElement.addEventListener('mouseout', () => {
+        showHoverElement.classList.remove('shadow-[0_0_5px_1px_cyan,0_0_15px_1px_cyan]');
+        readMoreButtonElement.classList.remove('shadow-[0_0_5px_1px_cyan,0_0_25px_1px_cyan,0_0_100px_1px_cyan,0_0_200px_1px_cyan]');
+    });
+}
+
+function typingEffect(typingEffect) {
+    let typed = new Typed(typingEffect,{
+        strings : ['frontend and backend developer', ' A programmer', 'A blender artist', 'A web developer'],
+        typeSpeed : 150,
+        backSpeed : 150,
+        loop : true
+    })
+}
+typingEffect('.js-typingEffect')
+
+typingEffect('.js-typingEffect1')
+        
+
+    function sendMail() {
+        let params = {
+            name : document.getElementById('name').value,
+            email : document.getElementById('email').value,
+            subject : document.getElementById('subject').value,
+            message : document.getElementById('message').value
+        }
+
+        emailjs.send('service_681rhgw','template_c83burg',params).then(alert('Email Sent!!!'))
+    }
+
+    
+
+
+</script>
+</html>
